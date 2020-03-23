@@ -35,6 +35,16 @@ theme: plainwhite
 plugins:
   - jekyll-feed
 
+# customizing plainwhite theme
+plainwhite:
+  name: Sri Krishna
+  tagline: Devops Engineer. hopeful animator
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: krishnaghatti
+    github: krishnaghatti
+    linkedIn: in/krishnaghatti # format: locale/username
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
