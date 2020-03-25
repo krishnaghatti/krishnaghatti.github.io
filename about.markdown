@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hello World!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My name is Sri Krishna. I am a Devops engineer (mostly self taught). Within the devops domain I have worked on Linux server administration, Configuration management, Cloud technologies - IaaS, PaaS and to some extent SaaS and tool development mainly in python.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Apart from that I like to tinker around with my home lab setup, listen to classic rock songs by Pink Floyd, Led Zeppelin, Metallica, Neil Young and a lot more like these. I am a big  movie buff. I love movies, so if anything is short of my expectation I do not watch it :D.
 
+Animation is my other hobby and I do sketch a little. Some day I would like to animate my own characters. As a kid I used to follow Disney, Pixar and Tom and Jerry cartoons. As I grew up my interest in animation grew though it has not reached a level of taking up as my primary work. Hobbies and career are two different things! Each of these have to be treated with due respect individually.
 
-[jekyll-organization]: https://github.com/jekyll
+Well stick around and lets see how deep this rabbit hole goes.
