@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pi-hole in the cloud: Part 1"
+title:  "Pi-hole in the cloud: Part 1 - I hate ads!"
 date:   2020-04-07 00:00:00 +0530
 categories: jekyll update
 ---
@@ -16,11 +16,11 @@ To over come this I used [Wireguard VPN][wireguard] server on the cloud node. I 
 1. Having a public IP on the DNS server
 2. Removes the challenge of blocking unwanted queries.
 
-As of today I have been using this setup for over 10 days and I am very happy with the outcome. Below is a screenshot of the stats over a 24 hour period and **34.7% of my DNS queries on my mobile are related to ads!!**
+The DNS server is up over 10 days and I am very happy with the outcome. Below is a screenshot of the stats over a 24 hour period and yes **34.7% of my DNS queries on my mobile are related to ads!!**
 
 ![Stats over 24 hours](/assets/images/piholestats.jpeg)
 
-I will be detailing the technical aspects along with the configuration in a following post.
+I will be detailing the technical aspects along with the configuration in a follow-up Part-2 post.
 
 <!-- The setup can be done with [OpenVPN server][pi-vpn] -->
 Do check out the excellent documentation available on [Pi-hole docs][pi-hole] for more information on how to get the most out of Pi-hole. File all bugs/feature requests at [Pi-hole’s GitHub repo][pihole-gh]. If you have questions, you can ask them on [Pi-hole discourse][pi-hole-disc].
