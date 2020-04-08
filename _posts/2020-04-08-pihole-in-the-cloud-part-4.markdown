@@ -71,6 +71,11 @@ The screenshot below is a side by side comparison with and with out the VPN tunn
   While the setup works as per my expectation and the results are impressive, there are some challenges I have to resolve at some point.
     - The server is in the Bangalore region and so as long as I use it in and around that area I should have no latency issues. I have not tested this when the client is in other parts of the world.
 
+- ### Automation
+
+  I setup the cloud VM with Terraform and the configuration with Ansible. The [Algo][algo] project has a full setup that provisions VM, setups up pi-hole, wireguard and other VPN servers to choose from. Do check it out if you want to have the full setup automated.
+
 [part1]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/07/pihole-in-the-cloud-part-1.html
 [part2]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/08/pihole-in-the-cloud-part-2.html
 [part3]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/08/pihole-in-the-cloud-part-3.html
+[algo]: https://github.com/trailofbits/algo

@@ -21,7 +21,7 @@
 title: little victories!
 email: ghatti.srikrishna@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This blog serves as a means for me present the challenges I have faced in my professional career and also how I try to keep up with my interests and hobbies at the same time.
+  This blog serves as a means for me to present the challenges I have faced in my professional career and also how I try to keep up with my interests and hobbies at the same time.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "krishnaghatti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: krishnaghatti
