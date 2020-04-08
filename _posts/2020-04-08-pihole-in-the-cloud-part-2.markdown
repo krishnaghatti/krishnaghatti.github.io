@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pi-hole in the cloud: Part 2 - Cloud VM and WireGuard setup"
+title:  "Pi-hole + cloud: Part 2 - Cloud VM and WireGuard setup"
 date:   2020-04-08 00:00:00 +0530
 categories: jekyll update
 ---
@@ -82,9 +82,6 @@ In [Part-1][part1] I talked about why I wanted this setup. In Part-2 I will be c
       ListenPort = 51820
       PrivateKey = QPvmG/xa9xPvD5XV5K5pyXeA+6x8aiCiRC82RECffGY=
 
-      [Peer]
-      PublicKey = vgBavl4f13wT2qbWj0OgLbDNxhls+nrjWPYngmXaIT8=
-      AllowedIPs = 192.168.5.5/32
 
   - Address = 192.168.8.1/24. This line defines the IP and the subnet the server will be running on. This needs to be a network that is not being used by the cloud VM so that it does not interfere with the routes of the VM.
   - ListenPort = 51820. This is the listening port of the VPN server. Make sure that the VM has this port open to accept UDP traffic from any where (0.0.0.0/0).
