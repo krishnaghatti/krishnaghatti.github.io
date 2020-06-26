@@ -77,5 +77,5 @@ In [Part-1][part1] I talked about why I wanted this setup. [Part-2][part2] talks
 
   voilà! Now my mobile phone where ever it is will have no ads served. The list of the blocked domains are periodically updated and I can add any wildcard/regex pattern domains to add more to the list. In my next post I will show this setup in action.
 
-[part1]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/07/pihole-in-the-cloud-part-1.html
-[part2]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/08/pihole-in-the-cloud-part-2.html
+[part1]: 2020-04-07-pihole-in-the-cloud-part-1.markdown
+[part2]: 2020-04-08-pihole-in-the-cloud-part-2.markdown

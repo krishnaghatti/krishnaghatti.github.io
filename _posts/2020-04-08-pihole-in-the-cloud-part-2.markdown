@@ -107,5 +107,5 @@ In the next parts I will be walking through the Pi-hole setup, client configurat
 
 [Pihole]: https://pi-hole.net/
 [wireguard]: https://en.wikipedia.org/wiki/WireGuard
-[part1]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/06/pihole-in-the-cloud-part-1.html
+[part1]: 2020-04-07-pihole-in-the-cloud-part-1.markdown
 [do]: https://cloud.digitalocean.com/

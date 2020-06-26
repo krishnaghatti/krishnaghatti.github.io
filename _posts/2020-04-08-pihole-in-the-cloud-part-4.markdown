@@ -75,7 +75,7 @@ The screenshot below is a side by side comparison with and with out the VPN tunn
 
   I setup the cloud VM with Terraform and the configuration with Ansible. The [Algo][algo] project has a full setup that provisions VM, setups up pi-hole, wireguard and other VPN servers to choose from. Do check it out if you want to have the full setup automated.
 
-[part1]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/07/pihole-in-the-cloud-part-1.html
-[part2]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/08/pihole-in-the-cloud-part-2.html
-[part3]: https://blog.krishnaghatti.dev/jekyll/update/2020/04/08/pihole-in-the-cloud-part-3.html
+[part1]: 2020-04-07-pihole-in-the-cloud-part-1.markdown
+[part2]: 2020-04-08-pihole-in-the-cloud-part-2.markdown
+[part3]: 2020-04-08-pihole-in-the-cloud-part-3.markdown
 [algo]: https://github.com/trailofbits/algo
