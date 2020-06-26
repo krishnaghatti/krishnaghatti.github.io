@@ -5,13 +5,13 @@ date:   2020-04-08 00:00:00 +0530
 categories: jekyll update
 ---
 
-In [Part-1][part1] I talked about why I wanted this setup. [Part-2][part2] talks about the setup of the VM and the WireGuard server.In [Part-3][part3] covered the Pi-hole and the client configurations let's see the setup in action and if the DNS server actually can perform similar to a open DNS server like 8.8.8.8.
+In [Part-1](pihole-in-the-cloud-part-1.markdown) I talked about why I wanted this setup. [Part2](2020-04-08-pihole-in-the-cloud-part-2.markdown) talks about the setup of the VM and the WireGuard server.In [Part3](2020-04-08-pihole-in-the-cloud-part-3.markdown) covered the Pi-hole and the client configurations let's see the setup in action and if the DNS server actually can perform similar to a open DNS server like 8.8.8.8.
 
 - ### Ad blocking
 
 The screenshot below is a side by side comparison with and with out the VPN tunnel connected. When the tunnel is switched off, the DNS queries go to the ISP DNS server which gives the actual ad content. When the tunnel is up, the Pi-hole DNS server responds that the ad is available at 0.0.0.0 thus the client gets a null response which effectively blocks the ad.
 
-![Ads blocked comparison](/assets/images/adblock2.jpg)
+![Ads blocked comparison](/assets/images/ad-block-comparision.jpg)
 
 
 ![B E A Utiful](/assets/images/beautiful.gif)
@@ -75,7 +75,4 @@ The screenshot below is a side by side comparison with and with out the VPN tunn
 
   I setup the cloud VM with Terraform and the configuration with Ansible. The [Algo][algo] project has a full setup that provisions VM, setups up pi-hole, wireguard and other VPN servers to choose from. Do check it out if you want to have the full setup automated.
 
-[part1]: 2020-04-07-pihole-in-the-cloud-part-1.markdown
-[part2]: 2020-04-08-pihole-in-the-cloud-part-2.markdown
-[part3]: 2020-04-08-pihole-in-the-cloud-part-3.markdown
 [algo]: https://github.com/trailofbits/algo

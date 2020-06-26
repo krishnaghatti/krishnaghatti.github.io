@@ -5,7 +5,7 @@ date:   2020-04-08 00:00:00 +0530
 categories: jekyll update
 ---
 
-In [Part-1][part1] I talked about why I wanted this setup. [Part-2][part2] talks about the setup of the VM and the WireGuard server. Now I will talk about the main ingredient the Pi-hole setup along with the client configuration.
+In [Part1](2020-04-07-pihole-in-the-cloud-part-1.markdown) I talked about why I wanted this setup. [Part2](2020-04-08-pihole-in-the-cloud-part-2.markdown) talks about the setup of the VM and the WireGuard server. Now I will talk about the main ingredient the Pi-hole setup along with the client configuration.
 
 - ### Pi-hole Setup
 
@@ -77,5 +77,3 @@ In [Part-1][part1] I talked about why I wanted this setup. [Part-2][part2] talks
 
   voilà! Now my mobile phone where ever it is will have no ads served. The list of the blocked domains are periodically updated and I can add any wildcard/regex pattern domains to add more to the list. In my next post I will show this setup in action.
 
-[part1]: 2020-04-07-pihole-in-the-cloud-part-1.markdown
-[part2]: 2020-04-08-pihole-in-the-cloud-part-2.markdown

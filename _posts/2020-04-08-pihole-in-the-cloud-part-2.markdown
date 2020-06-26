@@ -5,7 +5,7 @@ date:   2020-04-08 00:00:00 +0530
 categories: jekyll update
 ---
 
-In [Part-1][part1] I talked about why I wanted this setup. In Part-2 I will be covering the setup details that are required to run WireGuard and a VM on which to run it.
+In [Part1](2020-04-07-pihole-in-the-cloud-part-1.markdown) I talked about why I wanted this setup. In Part-2 I will be covering the setup details that are required to run WireGuard and a VM on which to run it.
 
 - ### A cloud VM
   The first ingredient is a VM. I am using [Digital Ocean][do] droplet for this purpose. I picked a Ubuntu 18.04 droplet with 1 GB Memory and 25 GB Disk. The droplet has about **1 TB** in network transfer usage per month which is a lot for this requirement. I can run a few more services on the same machine later. This will cost around $5 to $6.
@@ -107,5 +107,4 @@ In the next parts I will be walking through the Pi-hole setup, client configurat
 
 [Pihole]: https://pi-hole.net/
 [wireguard]: https://en.wikipedia.org/wiki/WireGuard
-[part1]: 2020-04-07-pihole-in-the-cloud-part-1.markdown
 [do]: https://cloud.digitalocean.com/
