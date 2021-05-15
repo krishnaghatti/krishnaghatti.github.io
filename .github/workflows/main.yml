@@ -20,23 +20,46 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-    
-      - name: convert notebooks and word docs to posts
-        uses: fastai/fastpages@master
       
-      - name: Jekyll build
-        uses: docker://jekyll/jekyll
-        with:
-          args: jekyll build
+    - name: Check if secret exists
+      if: github.event_name == 'push'
+      run: |
+        if [ -z "$github_token" ]
+        then
+          echo "You do not have a secret named SSH_DEPLOY_KEY.  This means you did not follow the setup instructions carefully.  Please try setting up your repo again with the right secrets."
+          exit 1;
+        fi
+      env:
+       github_token: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.event_name == 'push'
-        with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-         publish_branch: gh-pages
-         publish_dir: ./_site
+
+    - name: Copy Repository Contents
+      uses: actions/checkout@main
+      with:
+        persist-credentials: false
+
+    - name: convert notebooks and word docs to posts
+      uses: ./_action_files
+
+    - name: setup directories for Jekyll build
+      run: |
+        rm -rf _site
+        sudo chmod -R 777 .
+    - name: Jekyll build
+      uses: docker://fastai/fastpages-jekyll
+      with:
+        args: bash -c "jekyll build -V --strict_front_matter --trace"
+      env:
+        JEKYLL_ENV: 'production'
+        
+    - name: copy CNAME file into _site if CNAME exists
+      run: |
+        sudo chmod -R 777 _site/
+        cp CNAME _site/ 2>/dev/null || :
+    - name: Deploy
+      if: github.event_name == 'push'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
