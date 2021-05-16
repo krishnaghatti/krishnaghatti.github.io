@@ -29,11 +29,11 @@ github_username:  krishnaghatti
 
 # Build settings
 # theme: jekyll-theme-minimal
-theme: jekyll-theme-hacker
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-markdown: kramdown
+# theme: jekyll-theme-hacker
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
+# markdown: kramdown
 repository: krishnaghatti/krishnaghatti.github.io
 
 # Set this to true to get LaTeX math equation support
