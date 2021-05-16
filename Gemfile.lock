@@ -131,6 +131,9 @@ GEM
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
+    jekyll-octicons (14.1.0)
+      jekyll (>= 3.6, < 5.0)
+      octicons (= 14.1.0)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
@@ -194,14 +197,23 @@ GEM
       jekyll-seo-tag (~> 2.0)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
+    jekyll-toc (0.17.1)
+      jekyll (>= 3.9)
+      nokogiri (~> 1.11)
+    jekyll-twitter-plugin (2.1.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.12.0)
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    katex (0.8.0)
+      execjs (~> 2.7)
     kramdown (2.3.1)
       rexml
+    kramdown-math-katex (1.0.1)
+      katex (~> 0.4)
+      kramdown (~> 2.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -219,6 +231,8 @@ GEM
     nokogiri (1.11.4)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    octicons (14.1.0)
+      nokogiri (>= 1.6.3.1)
     octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -269,8 +283,18 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-feed (~> 0.12)
+  jekyll-gist
+  jekyll-octicons
+  jekyll-paginate
+  jekyll-relative-links
+  jekyll-remote-theme
+  jekyll-seo-tag
   jekyll-sitemap
+  jekyll-toc
+  jekyll-twitter-plugin
+  jemoji
   kramdown (>= 2.3.1)
+  kramdown-math-katex
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
