@@ -35,6 +35,21 @@ plugins:
   - jekyll-sitemap
 markdown: kramdown
 repository: krishnaghatti/krishnaghatti.github.io
+
+# Set this to true to get LaTeX math equation support
+use_math: 
+
+# Set this to true to display the summary of your blog post under your title on the Home page.
+show_description: true
+
+# Set this to true to display image previews on home page, if they exist
+show_image: false
+
+# Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
+annotations: false
+
+# Set this to true to display tags on each post
+show_tags: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -54,3 +69,66 @@ repository: krishnaghatti/krishnaghatti.github.io
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - docker-compose.yml
+  - action.yml
+  - Makefile
+
+# this setting allows you to keep pages organized in the _pages folder
+include:
+  - _pages
+
+# This specifies what badges are turned on by default for notebook posts.
+default_badges:
+  github: true
+  binder: true
+  colab: true
+
+# Escape HTML in post descriptions
+html_escape:
+  description: false
+
+# Everything below here should be left alone. Modifications may break fastpages
+future: true
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-octicons
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+# See https://jekyllrb.com/docs/pagination/
+# For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
+paginate: 15
+paginate_path: /page:num/
+
+remote_theme: jekyll/minima
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# to limit size of xml as it can grow quite large.
+feed:
+  posts_limit: 5 #default posts_limit: 10
+  excerpt_only: true
+  
+exclude:
+  - settings.ini
